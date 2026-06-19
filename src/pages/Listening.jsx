@@ -8,7 +8,7 @@ import { toIeltsBandStr } from '../lib/band'
 
 // ─── MOCK TEST DATA ──────────────────────────────────────────────────────────
 // Replace AUDIO_SRC with your actual MP4/MP3 path after recording
-const AUDIO_SRC = null // e.g. '/audio/listening_test_1.mp4'
+const AUDIO_SRC = '/audio/listening_test_1.mp3'
 
 const TRANSCRIPT = [
   { id: 0, text: "Good morning and welcome to the Riverside Community Centre. My name is Sandra and I'll be taking your details today.", distractor: false },
