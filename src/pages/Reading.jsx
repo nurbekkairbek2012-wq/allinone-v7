@@ -55,6 +55,7 @@ export default function Reading() {
   const passageRef = useRef(null)
 
   const handleWordClick = (e, word) => {
+    e.stopPropagation()
     const clean = word.toLowerCase().replace(/[^a-z]/g, '')
     const syns = PASSAGE.synonymMap[clean]
     if (!syns) return
@@ -261,6 +262,11 @@ export default function Reading() {
             </div>
           </div>
         )}
+
+      </main>
+    </div>
+  )
+}
 
       </main>
     </div>
